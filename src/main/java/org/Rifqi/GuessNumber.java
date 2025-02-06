@@ -37,7 +37,7 @@ public class GuessNumber {
                     break;
                 } else if (response.equalsIgnoreCase("no")) {
                     System.out.println("Thank you for Playing the Number is : "+ number);
-                    return;
+                    scanner.close();
                     
                 }else {
                     System.out.println("Invalid Response please enter yes/no");
