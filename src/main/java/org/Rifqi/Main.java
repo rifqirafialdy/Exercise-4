@@ -12,8 +12,7 @@ public class Main {
         Scanner scanner=new Scanner(System.in);
     GuessNumber game = new GuessNumber(scanner);
     InputNumber input= new InputNumber(scanner);
-   input.inputNumber();
-
+        game.startGame();
 
 
     }

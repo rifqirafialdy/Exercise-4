@@ -29,11 +29,19 @@ public class GuessNumber {
                 System.out.println("Congrats u guess it in "+attempts+" attempts");
                 break;
             }
-            System.out.println("Do u want to Try again? yes/no");
-            boolean responese= scanner.next().toLowerCase().equals("yes");
-            if (!responese){
-                System.out.println("The number is"+ number);
-                break;
+            String response;
+            while (true){
+                System.out.println("Do u Want to Try Again? yes/no");
+                response= scanner.next();
+                if (response.equalsIgnoreCase("yes")){
+                    break;
+                } else if (response.equalsIgnoreCase("no")) {
+                    System.out.println("Thank you for Playing the Number is : "+ number);
+                    return;
+                    
+                }else {
+                    System.out.println("Invalid Response please enter yes/no");
+                }
             }
 
 
